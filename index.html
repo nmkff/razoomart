@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#c4c4c4" />
+    <meta name="description" content="razoom.art web atelier" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <title>razoom.art — web atelier</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: normal;
+        font-kerning: normal;
+        background: #c4c4c4;
+        color: #3900ff;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .info {
+        position: relative;
+        z-index: 1;
+      }
+
+      .info p { margin: 0; }
+
+      .services { margin-top: 2px !important; }
+
+      .atelier {
+        display: inline-block;
+        color: #c4c4c4;
+        background: #3900ff;
+      }
+
+      .contacts { margin-top: 24px; }
+
+      .contacts p + p { margin-top: 2px; }
+
+      .coming-soon {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: #c4c4c4;
+        background: #ff0000;
+        text-decoration-color: #c4c4c4;
+      }
+
+      .logo {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 82px;
+        height: 82px;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        transform-style: preserve-3d;
+        perspective: 600px;
+        animation: spin 2.4s linear infinite;
+        transform-origin: center;
+      }
+
+      @keyframes spin {
+        from { transform: translate(-50%, -50%) rotateY(0deg); }
+        to { transform: translate(-50%, -50%) rotateY(360deg); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .logo { animation: none; }
+      }
+
+      @media (max-width: 480px) {
+        body { padding: 16px; }
+        .coming-soon { left: 16px; bottom: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="info">
+      <p class="atelier">razoom.art web atelier</p>
+      <p class="services">web, product, graphic design</p>
+      <section class="contacts" aria-label="Contacts">
+        <p>contact: <a href="https://t.me/bergevich">@bergevich</a></p>
+        <p>tg channel: <a href="https://t.me/razoom_art">@razoom_art</a></p>
+      </section>
+    </main>
+
+    <p class="coming-soon">new website is coming soon</p>
+
+    <svg class="logo" viewBox="0 0 82 82" role="img" aria-label="razoom.art logo" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_df_174_3897)">
+        <path d="M1 81H81V1H1V81ZM59 3C59 14.175 59 19.765 57.3105 24.2197C54.6717 31.1778 49.1778 36.6717 42.2197 39.3105C37.765 41 32.1771 41 21.0022 41L54.5811 79H79V3H59Z" fill-rule="evenodd" clip-rule="evenodd" fill="#3900FF" />
+      </g>
+      <defs>
+        <filter id="filter0_df_174_3897" x="0" y="0" width="82" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="0.5" dy="0.5" />
+          <feGaussianBlur stdDeviation="0.25" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_174_3897" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_174_3897" result="shape" />
+          <feGaussianBlur stdDeviation="0.5" result="effect2_foregroundBlur_174_3897" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
